@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Образовательный портал по математике{% endblock %}</title>
+</head>
+<body>
+    <h1>Home</h1>
+
+    {% block content %}{% endblock %}
+
+    <h2>Разделы сайта</h2>
+
+    <ul>
+        <li><a href="/about/">О нас</a></li>
+        <li><a href="/math/">Математика</a></li>
+        <li><a href="/tasks/">Задания</a></li>
+        <li><a href="/sum/">Калькулятор суммы</a></li>
+        <li><a href="/discriminant/">Калькулятор дискриминанта</a></li>
+    </ul>
+</body>
+</html>

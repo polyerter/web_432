@@ -1,0 +1,27 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Задания</title>
+</head>
+<body>
+
+    <h1>Математические задания</h1>
+
+    <img src="{% static 'hello/images/tasks.jpg' %}"
+         alt="Изображение к заданиям"
+         width="500">
+
+    <h2>Выберите задание:</h2>
+
+    <ul>
+        <li><a href="/tasks/probability/">Задание 1. Теория вероятностей</a></li>
+        <li><a href="/tasks/percent/">Задание 2. Проценты</a></li>
+    </ul>
+
+    <a href="/">Вернуться на главную</a>
+
+</body>
+</html>

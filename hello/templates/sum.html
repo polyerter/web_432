@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Сумма чисел</title>
+</head>
+<body>
+    <h2>Калькулятор суммы</h2>
+    <form method="post" action="/calc_sum/">
+        {% csrf_token %}
+        <p>Первое число: <br /> <input name="num1" type="number" step="any" required /></p>
+        <p>Второе число: <br /> <input name="num2" type="number" step="any" required /></p>
+        <input type="submit" value="Сложить" />
+    </form>
+</body>
+</html>
